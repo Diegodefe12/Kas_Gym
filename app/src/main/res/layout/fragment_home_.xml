@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#000"
+    tools:context=".Home_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:src="@drawable/logo_kas1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Login"
+                android:textColor="#9c9c9c" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|bottom"
+                android:text="Te quedan x dias de tu plan"
+                android:textColor="#11a600"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/colorAccent">
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="10dp">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageView
+
+                    android:id="@+id/imagen_planes_entrenamiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="147dp"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/imagen_planes_entrenamiento" />
+
+
+                <ImageView
+                    android:id="@+id/imagen_reservas_turo"
+                    android:layout_width="match_parent"
+                    android:layout_height="147dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/imagen_reservar_turno_editada" />
+
+                <ImageView
+                    android:id="@+id/imagen_conocenos"
+                    android:layout_width="match_parent"
+                    android:layout_height="147dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/conocenos1" />
+
+                <ImageView
+                    android:id="@+id/imagen_cronograma"
+                    android:layout_width="match_parent"
+                    android:layout_height="147dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/cronograma" />
+
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_assignment_black_24dp"
+                app:fabSize="mini"
+                app:layout_anchor="@id/imagen_planes_entrenamiento"
+                app:layout_anchorGravity="right|bottom" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_create_black_24dp"
+                app:fabSize="mini"
+                app:layout_anchor="@id/imagen_reservas_turo"
+                app:layout_anchorGravity="right|bottom" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_local_see_black_24dp"
+                app:fabSize="mini"
+                app:layout_anchor="@id/imagen_conocenos"
+                app:layout_anchorGravity="right|bottom" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_grid_on_black_24dp"
+                app:fabSize="mini"
+                app:layout_anchor="@id/imagen_cronograma"
+                app:layout_anchorGravity="right|bottom" />
+
+        </android.support.design.widget.CoordinatorLayout>
+    </ScrollView>
+
+</LinearLayout>
